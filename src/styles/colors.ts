@@ -1,0 +1,9 @@
+export const GREY_SCALE_BG_DARK = '#181818';
+export const GREY_SCALE_BG_LIGHT = '#1b1b1b';
+export const DARKER_BLACK = '#121212';
+export const LIGHT_BLACK = '#1f1f1f';
+export const GREY_SCALE_400 = '#b2b2b2';
+export const GREY = '#6A6A6A';
+export const GREY_LIGHT = '#929292';
+export const GREY_LIGHTER = '#F8F8F8';
+export const PRIMARY_WHITE = '#FFFFFF';

@@ -1,0 +1,116 @@
+:root {
+  --primary-white: rgba(255, 255, 255, 1);
+  --secondary-white: rgba(255, 255, 255, 0.5);
+  --placeholder-color: rgba(255, 255, 255, 0.3);
+  --input-focus-color: rgba(255, 155, 51, 1);
+  --grey-scale-BG-light: #1b1b1b;
+  --slider-thumb-transform: none;
+}
+
+#root {
+  margin: 0 auto;
+}
+
+* {
+  user-select: none;
+}
+
+.caption-regular {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+}
+
+/* input */
+.custom-input {
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: 3px solid var(--secondary-white);
+  color: var(--primary-white);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  padding: 20px 0px 19px 15px;
+  border-radius: 6px;
+}
+
+.custom-input::placeholder {
+  color: var(--placeholder-color);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+
+.custom-input:focus {
+  border-color: var(--input-focus-color);
+  outline: none; /* remove original focus style */
+}
+
+/* slider */
+.slider {
+  position: relative;
+  outline: none;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.slider::before,
+.slider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 8px;
+  border-radius: 4px;
+}
+
+.slider::before {
+  left: 0;
+  max-width: 100%;
+  width: calc(var(--slider-percentage) + 5px);
+  background: linear-gradient(270deg, #ffd25f 0.13%, #ff5c01 100%);
+}
+
+.slider::after {
+  right: 0;
+  width: calc(100% - var(--slider-percentage));
+  background: var(--placeholder-color);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--grey-scale-BG-light);
+  border: 6px solid #ffd05d;
+  cursor: pointer;
+  position: absolute;
+  top: -8px;
+  left: var(--slider-percentage);
+  transform: var(--slider-thumb-transform);
+  z-index: 1;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--grey-scale-BG-light);
+  border: 6px solid #ffd05d;
+  cursor: pointer;
+  position: absolute;
+  top: -6px;
+  left: var(--slider-percentage);
+  transform: var(--slider-thumb-transform);
+  z-index: 1;
+}

@@ -1,0 +1,28 @@
+/* For WebKit browsers (e.g., Chrome, Safari) */
+.hide-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+.hide-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Make track transparent */
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1); /* Make thumb semi-transparent */
+  border-radius: 6px;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3); /* Make thumb more visible on hover */
+}
+
+/* For Firefox */
+.hide-scrollbar {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: rgba(0, 0, 0, 0.1) transparent; /* Thumb color and track color */
+}
+
+.hide-scrollbar:hover {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Thumb color on hover */
+}
+

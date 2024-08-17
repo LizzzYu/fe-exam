@@ -1,0 +1,26 @@
+.typography-h3-bold {
+  @apply text-white font-ubuntu text-h3 text-left font-bold
+}
+
+.typography-h4 {
+  @apply text-white font-ubuntu text-h4 text-left font-normal;
+}
+
+.typography-h5 {
+  @apply text-white font-ubuntu text-h5 text-left font-normal;
+}
+
+.typography-subtitle {
+  @apply text-white font-ubuntu text-base font-normal text-left tracking-[0.15px]
+}
+
+.typography-body1 {
+  @apply font-ubuntu text-base tracking-[0.15px] 
+}
+
+.typography-body2 {
+  @apply font-ubuntu text-body2 tracking-[0.25px]
+}
+
+
+

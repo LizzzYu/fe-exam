@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-base {
+  @apply box-border text-center transition duration-300;
+}
+
+.button-default {
+  @apply w-full h-10 rounded bg-white font-ubuntu font-bold text-[14px] leading-[14px] text-darkerBlack hover:bg-darkerBlack hover:border-white hover:border hover:text-white;
+}
+
+.button-default:disabled {
+  @apply cursor-not-allowed bg-white text-darkerBlack border-none;
+}
+
+.button-default:disabled:hover {
+  @apply bg-white text-darkerBlack border-none;
+}
+
+.button-outlined {
+  @apply bg-darkerBlack border border-solid border-white text-white hover:bg-white hover:text-darkerBlack font-open-sans text-[12px] font-semibold leading-[12px] px-[10px] py-[7px] rounded-[20px] h-fit;
+}
+
+.button-outlined:disabled {
+  @apply cursor-not-allowed bg-darkerBlack text-white border-white;
+}
+
+.button-contained {
+  @apply bg-white text-darkerBlack border border-solid border-white font-open-sans text-[12px] font-semibold leading-[12px] px-[10px] py-[7px] rounded-[20px] hover:bg-darkerBlack hover:text-white;
+}
+
+.button-contained:disabled {
+  @apply cursor-not-allowed bg-white text-darkerBlack border-white;
+}
+
+
