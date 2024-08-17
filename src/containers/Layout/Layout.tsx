@@ -12,7 +12,11 @@ function Layout(): React.ReactElement {
 	const isHome = location.pathname === RoutePaths.HOME;
 
 	return (
-		<div className="flex flex-col min-h-screen lg:flex-row">
+		<div
+			className={`flex flex-col min-h-screen w-full ${
+				isHome ? 'fixed top-0' : ''
+			} lg:flex-row`}
+		>
 			{/* Mobile Header */}
 			<div className="h-[70px] bg-primaryBlack lg:hidden">
 				{isHome ? (

@@ -38,6 +38,7 @@
   text-align: left;
   padding: 20px 0px 19px 15px;
   border-radius: 6px;
+  user-select: auto;
 }
 
 .custom-input::placeholder {
@@ -53,6 +54,7 @@
 .custom-input:focus {
   border-color: var(--input-focus-color);
   outline: none; /* remove original focus style */
+  user-select: auto;
 }
 
 /* slider */

@@ -18,7 +18,7 @@ function Home(): React.ReactElement {
 		<div className="w-full min-h-[600px] pt-0 px-[20px] lg:w-[725px] lg:pt-[54px] lg:px-0 lg:min-h-[690px] relative">
 			<section>
 				<h5 className="typography-h5 pb-[16px] lg:pb-[20px]">Search</h5>
-				<Input onChange={(e) => setKeyword(e.target.value)} />
+				<Input onChange={(e) => setKeyword(e.target.value)} value={keyword} />
 			</section>
 			<div className="hidden lg:block w-full h-[1px] bg-white opacity-[0.1] my-[30px]" />
 			<section className="mt-[28px] lg:mt-0">
@@ -28,11 +28,11 @@ function Home(): React.ReactElement {
 					onChange={(value) => setPageSize(value)}
 				/>
 			</section>
-			<div className="absolute w-[calc(100%-40px)] bottom-[210px] h-[1px] bg-white opacity-[0.1] mt-[80px] lg:mt-[23px] lg:w-full lg:static" />
+			<div className="fixed w-[calc(100%-40px)] bottom-[210px] h-[1px] bg-white opacity-[0.1] mt-[80px] lg:mt-[23px] lg:w-full lg:static" />
 			<Button
 				label="SEARCH"
 				type="default"
-				className="absolute bottom-[90px] w-[calc(100%-40px)] mt-[24px] lg:bottom-[87px] lg:w-[343px]"
+				className="fixed bottom-[90px] w-[calc(100%-40px)] mt-[24px] lg:bottom-[87px] lg:w-[343px]"
 				onClick={handleSearch}
 			/>
 		</div>

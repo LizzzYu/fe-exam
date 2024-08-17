@@ -5,7 +5,7 @@ export default function ResultSkeleton(): React.ReactElement {
 	return (
 		<>
 			{Array.from({ length: skeletonNumber }).map(() => (
-				<div className="w-full aspect-[3/2]">
+				<div key={Math.random()} className="w-full aspect-[3/2]">
 					<div className="w-full bg-grey overflow-hidden animate-shimmer">
 						<div className="w-full h-full aspect-[3/2] object-cover" />
 					</div>

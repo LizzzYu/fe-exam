@@ -2,11 +2,18 @@ import React from 'react';
 
 interface InputProps {
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+	value: string;
 }
 
-function Input({ onChange }: InputProps) {
+function Input({ onChange, value }: InputProps): React.ReactElement {
 	return (
-		<input onChange={onChange} className="custom-input" placeholder="Keyword" />
+		<input
+			type="text"
+			onChange={onChange}
+			className="custom-input"
+			placeholder="Keyword"
+			value={value}
+		/>
 	);
 }
 
