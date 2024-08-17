@@ -21,7 +21,7 @@ function Layout(): React.ReactElement {
 					</div>
 				) : (
 					<button
-						className="flex-center"
+						className="flex-center fixed z-10 w-full h-[70px] bg-primaryBlack"
 						type="button"
 						onClick={() => navigate(RoutePaths.HOME)}
 					>
