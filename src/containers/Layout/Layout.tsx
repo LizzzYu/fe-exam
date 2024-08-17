@@ -40,7 +40,7 @@ function Layout(): React.ReactElement {
 
 			{/* Content */}
 			<div
-				style={{ scrollbarGutter: 'stable' }}
+				style={{ scrollbarGutter: 'stable', minHeight: 'calc(100vh - 70px)' }}
 				className="flex flex-1 h-screen lg:px-[130px] overflow-y-auto bg-primaryBlack justify-center hide-scrollbar"
 			>
 				<Outlet />
