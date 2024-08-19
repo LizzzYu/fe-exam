@@ -9,6 +9,7 @@ interface FollowListPropsProps extends FollowListProps {
 	onLoadMore: () => void;
 	isFetching: boolean;
 	hasMore: boolean;
+	error: Error | null;
 }
 
 export default function FollowList({
@@ -20,6 +21,7 @@ export default function FollowList({
 	onLoadMore,
 	isFetching,
 	hasMore,
+	error,
 }: FollowListPropsProps): React.ReactElement {
 	return (
 		<div className="w-full bg-secondaryBlack">
@@ -49,6 +51,11 @@ export default function FollowList({
 							/>
 						))}
 					</InfiniteScroll>
+				)}
+				{error && (
+					<div className="font-ubuntu typography-subtitle">
+						Something went wrong, please try again.
+					</div>
 				)}
 			</div>
 		</div>

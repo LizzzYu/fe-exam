@@ -127,6 +127,12 @@ function Result(): React.ReactElement {
 				</div>
 			)}
 
+			{error && (
+				<div className="font-ubuntu typography-subtitle">
+					Something went wrong, please try again.
+				</div>
+			)}
+
 			{resultData.length !== 0 && !isLastPage && (
 				<div className="hidden lg:flex lg:justify-start lg:pb-[90px]">
 					<Button

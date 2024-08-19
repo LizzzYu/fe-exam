@@ -15,7 +15,10 @@ export default function FollowListContainer(): React.ReactElement {
 	const [resultData, setResultData] = useState<User[]>([]);
 	const [hasMore, setHasMore] = useState<boolean>(true);
 
-	const { data, isLoading, isFetching } = useFetchFollow(activeTab, page);
+	const { data, isLoading, isFetching, error } = useFetchFollow(
+		activeTab,
+		page,
+	);
 
 	useEffect(() => {
 		setPage(1);
@@ -46,6 +49,7 @@ export default function FollowListContainer(): React.ReactElement {
 			onLoadMore={handleLoadMore}
 			isFetching={isFetching}
 			hasMore={hasMore}
+			error={error}
 		/>
 	);
 }
