@@ -1,31 +1,58 @@
-# React + TypeScript + Vite
+# Aha Front End Exam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a front-end application built using React and TypeScript, designed to demonstrate proficiency in modern web development practices. The application features a responsive layout, infinite scrolling, and dynamic data fetching, and is optimized for both desktop and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Design:** Adaptable layout for both mobile and desktop devices.
+- **Infinite Scroll:** Automatically loads more data as you scroll down.
+- **Lazy Loading:** Images and components are loaded on demand to improve performance.
+- **Error Handling:** Graceful handling of API errors and image load issues.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React Query**: For managing server-state in React applications.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **Vercel**: Deployment platform used for hosting the application.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# fe-exam
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/LizzzYu/fe-exam.git
+2. Install dependencies:
+   ```bash
+   npm install
+3. Run the development server:
+   ```bash
+   npm start
+   ```
+
+## Deployment
+
+This project is deployed on Vercel. You can view the live version [here](https://aha-fe-assessment.vercel.app/home).
+
+## Usage
+
+- **Search Functionality:** Enter keywords to search for results.
+- **Following List:** Display a list of users you are currently following.
+- **Navigation:** Use the sidebar for easy access to different sections.
+
+## Known Issues
+
+- Image loading times may vary depending on the external CDN response.
+- Some mobile browsers may slightly alter layout due to browser bars.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
