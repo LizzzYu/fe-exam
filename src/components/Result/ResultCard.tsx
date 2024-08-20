@@ -18,6 +18,7 @@ export default function ResultCard({
 					src={src}
 					alt="avatar"
 					className="w-full h-full aspect-[3/2] object-cover"
+					loading="lazy"
 				/>
 			</div>
 			<div className="pt-[20px] lg:pt-3">
